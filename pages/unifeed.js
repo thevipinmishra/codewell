@@ -113,8 +113,9 @@ export default function Unifeed() {
                 },
               }}
             >
-              {posts.map((post) => (
+              {posts.map((post, idx) => (
                 <BlogPost
+                  key={idx}
                   image={post.image}
                   title={post.title}
                   description={post.description}
